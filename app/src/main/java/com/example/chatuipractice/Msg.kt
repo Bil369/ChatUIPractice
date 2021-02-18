@@ -1,6 +1,8 @@
 package com.example.chatuipractice
 
-class Msg(val content: String, val type: Int) {
+import java.util.*
+
+class Msg(val content: String, val type: Int, val msgTime: GregorianCalendar) {
     companion object
     {
         const val TYPE_SENT = 0
