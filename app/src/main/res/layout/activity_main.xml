@@ -67,13 +67,17 @@
 
         <Button
             android:id="@+id/sendButton"
-            android:layout_width="wrap_content"
+            android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:text="发送"
             android:textColor="#ffffff"
+            android:textSize="15sp"
             android:theme="@style/Button"
-            android:layout_marginRight="5dp"/>
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
 
     </LinearLayout>
+
+    <include layout="@layout/emoji"/>
 
 </LinearLayout>
