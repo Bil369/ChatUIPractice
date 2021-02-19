@@ -60,14 +60,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 sendButton.visibility = View.VISIBLE
-                addButton.visibility = View.GONE
                 recyclerView.scrollToPosition(msgList.size - 1)
             }
 
             override fun afterTextChanged(s: Editable?) {
                 if(inputText.text.isEmpty())
                 {
-                    addButton.visibility = View.VISIBLE
                     sendButton.visibility = View.GONE
                 }
             }
@@ -95,7 +93,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     recyclerView.scrollToPosition(msgList.size - 1)
                     inputText.setText("")
                     sendButton.visibility = View.GONE
-                    addButton.visibility = View.VISIBLE
                 }
             }
             emojiButton -> {
