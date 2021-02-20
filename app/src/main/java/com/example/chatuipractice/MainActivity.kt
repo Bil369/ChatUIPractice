@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     {
         val msg1 = Msg("今天又是啥都没干的一天", Msg.TYPE_RECEIVED, GregorianCalendar(2020, 11, 1, 22, 49))
         msgList.add(msg1)
-        val msg2 = Msg("今天又是啥都没干的一天", Msg.TYPE_RECEIVED, GregorianCalendar(2021, 1, 17, 23, 58))
+        val msg2 = Msg("今天又是啥都没干的一天", Msg.TYPE_RECEIVED, GregorianCalendar(2021, 1, 19, 23, 58))
         msgList.add(msg2)
     }
 
